@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-family: Ruthie, cursive;
+    font-size: 500%;
+}
+
+
+/* Header */
+
+#mw-logo {
+    float: left;
+}
+
+#mw-title {
+    float: right;
+}
+
+#navbar {
+    clear: both;
+    list-style-type: none;
+}
+
+#navbar li {
+    float: left;
+}
+
+
+/* Page 1 */
+
+#home-title {
+    clear: left;
+}
