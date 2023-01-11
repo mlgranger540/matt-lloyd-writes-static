@@ -78,6 +78,7 @@ ul {
 #welcome {
     width: 100%;
     height: 800px;
+    background: url(../images/book.jpg) center center / cover no-repeat;
     position: relative;
 }
 
