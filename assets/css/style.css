@@ -31,7 +31,7 @@ h2 {
 
 p {
     padding-bottom: 10px;
-    font-size: 110%;
+    font-size: 120%;
     color: #DDD;
     line-height: 28px;
     text-align: justify;
@@ -88,8 +88,18 @@ ul {
 
 #navbar li {
     display: inline-block;
+    margin-top: 4px;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 11px 30px;
+}
+
+#navbar li:hover {
+    background-color: #d31a33;
+    /* color: #FFF; */
+}
+
+.active {
+    background-color: #d31a33;
 }
 
 
@@ -99,6 +109,7 @@ ul {
     width: 100%;
     height: 900px;
     background: url(../images/book.jpg) center center / cover no-repeat;
+    filter: blur(1px);
     animation-name: zoom;
     animation-duration: 2.5s;
     animation-fill-mode: forwards;
@@ -125,6 +136,80 @@ ul {
     top: 150px;
     width: 475px;
     height: 515px;
+}
+
+
+/* Page 2 - About the Author */
+
+#profile {
+    width: 100%;
+    height: 115vh;
+    background: url(../images/author.jpg) top center / cover no-repeat;
+    filter: blur(1.5px);
+    animation-name: zoom;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+#profile-edge {
+    width: 100%;
+    height: 115vh;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.06);
+    }
+}
+
+#profile-card {
+    left: 10vw;
+    top: 9vw;
+    width: 27vw;
+    height: 31vw;
+}
+
+#about {
+    height: 2060px;
+}
+
+.about-panel {
+    width: 1300px;
+    height: fit-content;
+}
+
+.about-panel ul {
+    padding: 0px 0px 10px 18px;
+    list-style-type: square;
+    font-size: 110%;
+    color: #DDD;
+    line-height: 28px;
+}
+
+.about-panel li {
+    display: inline;
+    padding-left: 60px;
+}
+
+#history {
+    left: 6vw;
+    top: 1370px;
+}
+
+#genre-audience {
+    right: 6vw;
+    top: 1915px;
+}
+
+#why-write {
+    left: 6vw;
+    top: 2560px;
 }
 
 
