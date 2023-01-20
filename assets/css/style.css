@@ -247,6 +247,30 @@ ul {
 }
 
 
+/* Page 3 - My Books */
+#books-intro {
+    height: 16vw;
+}
+
+#books-intro-card {
+    margin: 0 auto;
+    /* width: 40%; */
+}
+
+#books-scifi {
+    height: 30vw;
+}
+
+.book-card-1, .book-card-2, .book-card-3 {
+    width: 25%;
+    height: 70%;
+}
+
+.book-card-1 {
+    left: 7%;
+}
+
+
 /* Footer */
 
 footer {
@@ -366,10 +390,15 @@ footer h4 {
 
     p {
         font-size: 80%;
+        text-align: left;
     }
 
     a {
         font-size: 130%;
+    }
+
+    .panel {
+        display: inline;
     }
 
     #mw-logo {
@@ -411,9 +440,10 @@ footer h4 {
         display: block;
     }
 
-    /* #about-history, #about-genre-audience, #about-why-write {
+    #about-history, #about-genre-audience, #about-why-write {
         flex-direction: column;
-    } */
+        width: fit-content;
+    }
 
     footer {
         height: 315px;
