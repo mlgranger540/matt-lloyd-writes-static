@@ -23,15 +23,15 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 25px;
-    font-size: 180%;
+    padding-bottom: 1.15rem;
+    font-size: 175%;
     color: #DDD;
     text-transform: uppercase;
 }
 
 p {
-    padding-bottom: 10px;
-    font-size: 120%;
+    padding-bottom: 0.65rem;
+    font-size: 115%;
     color: #DDD;
     line-height: 28px;
     text-align: justify;
@@ -50,7 +50,7 @@ ul {
 .card {
     clear: both;
     position: absolute;
-    padding: 70px 70px 70px 70px;
+    padding: 4%;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 75%);
 }
@@ -88,7 +88,6 @@ ul {
 
 #navbar li {
     display: inline-block;
-    margin-top: 4px;
     text-transform: uppercase;
     padding: 11px 30px;
 }
@@ -107,7 +106,7 @@ ul {
 
 #welcome {
     width: 100%;
-    height: 900px;
+    height: 50vw;
     background: url(../images/book.jpg) center center / cover no-repeat;
     filter: blur(1px);
     animation-name: zoom;
@@ -117,7 +116,7 @@ ul {
 
 #welcome-edge {
     width: 100%;
-    height: 800px;
+    height: 50vw;
     overflow: hidden;
     position: relative;
 }
@@ -132,10 +131,18 @@ ul {
 }
 
 #welcome-card {
-    right: 17vw;
-    top: 150px;
-    width: 475px;
-    height: 515px;
+    right: 17.5%;
+    top: 18%;
+    width: 26%;
+    height: 58%;
+}
+
+#welcome-card h2 {
+    font-size: 200%;
+}
+
+#welcome-card p {
+    font-size: 130%;
 }
 
 
@@ -143,7 +150,7 @@ ul {
 
 #profile {
     width: 100%;
-    height: 115vh;
+    height: 55vw;
     background: url(../images/author.jpg) top center / cover no-repeat;
     filter: blur(1.5px);
     animation-name: zoom;
@@ -153,7 +160,7 @@ ul {
 
 #profile-edge {
     width: 100%;
-    height: 115vh;
+    height: 55vw;
     background-color: #000;
     overflow: hidden;
     position: relative;
@@ -169,23 +176,65 @@ ul {
 }
 
 #profile-card {
-    left: 10vw;
-    top: 9vw;
-    width: 27vw;
-    height: 31vw;
+    left: 11.5%;
+    top: 15%;
+    width: 26.5%;
+    height: 55%;
 }
 
-#about {
-    height: 2060px;
+#profile-card h2 {
+    font-size: 200%;
 }
+
+#profile-card p {
+    font-size: 130%;
+}
+
+#about-history, #about-genre-audience, #about-why-write {
+    position: relative;
+    min-height: 34vw;
+}
+
+#about-history {
+    margin-top: 4%;
+}
+
+#about-genre-audience {
+    background-color: rgba(0, 0, 0, 75%);
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#about-why-write {
+    margin-bottom: 4%;
+}
+
+#history-panel, #why-write-panel {
+    left: 7%;
+}
+
+#genre-audience-panel {
+    right: 7%;
+    background-color: #2b2b2b;
+}
+
+/* #genre-audience-panel h2, #genre-audience-panel p, #genre-audience-panel li {
+    color: #111;
+} */
 
 .about-panel {
-    width: 1300px;
-    height: fit-content;
+    display: flex;
+    width: 72%;
+    height: 100%;
+}
+
+.about-panel div {
+    display: inline-block;
+    padding-left: 4%;
 }
 
 .about-panel ul {
-    padding: 0px 0px 10px 18px;
+    padding-bottom: 0.65rem;
     list-style-type: square;
     font-size: 110%;
     color: #DDD;
@@ -194,22 +243,7 @@ ul {
 
 .about-panel li {
     display: inline;
-    padding-left: 60px;
-}
-
-#history {
-    left: 6vw;
-    top: 1370px;
-}
-
-#genre-audience {
-    right: 6vw;
-    top: 1915px;
-}
-
-#why-write {
-    left: 6vw;
-    top: 2560px;
+    padding-left: 1rem;
 }
 
 
