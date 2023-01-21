@@ -34,7 +34,6 @@ p {
     font-size: 115%;
     color: #DDD;
     line-height: 28px;
-    text-align: justify;
 }
 
 a {
@@ -52,7 +51,7 @@ ul {
     position: absolute;
     padding: 4%;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 75%);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .panel {
@@ -62,7 +61,19 @@ ul {
     width: 72%;
     height: fit-content;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 75%);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.book {
+    clear: both;
+    display: inline-block;
+    padding: 4.2%;
+    width: 28%;
+    height: 90%;
+    box-sizing: border-box;
+    color: #000;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -109,6 +120,40 @@ ul {
 
 .active {
     background-color: #d31a33;
+}
+
+
+/* Collapsable navbar classes */
+
+.collapsible {
+    font-size: 1.2em;
+    background-color: #FE233F;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px 10px 20px;
+}
+
+.collapsible:hover {
+    background-color: #d31a33;
+    color:#fff;
+    transition: 0.3s;
+}
+
+#collapsedContent {
+    font-size: 0.8em;
+    padding: 0px;
+    text-align: center;
+    display: none;
+    background-color: #FE233F;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#collapsedContent > ul > li:hover {
+    background-color: #d31a33;
+    transition: 0.3s;
+    color: #fff;
 }
 
 
@@ -228,7 +273,7 @@ ul {
 }
 
 #about-genre-audience {
-    background-color: rgba(0, 0, 0, 75%);
+    background-color: rgba(0, 0, 0, 0.75);
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
@@ -248,27 +293,59 @@ ul {
 
 
 /* Page 3 - My Books */
+
+#book-page {
+    padding-top: 2%;
+    width: 100%;
+    height: 137vw;
+    background: url(../images/forest.jpg) top center / cover no-repeat fixed;
+    /* filter: blur(2px); */
+}
+
 #books-intro {
     height: 16vw;
 }
 
-#books-intro-card {
+#books-intro-panel {
+    display: block;
+    width: 100%;
+    padding: 3%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.bookshelf {
+    display: block;
     margin: 0 auto;
-    /* width: 40%; */
+    height: 40vw;
+    text-align: center;
 }
 
-#books-scifi {
-    height: 30vw;
+.book-panel-1 {
+    margin-right: 4%;
 }
 
-.book-card-1, .book-card-2, .book-card-3 {
-    width: 25%;
-    height: 70%;
+.book-panel-3 {
+    margin-left: 4%;
 }
 
-.book-card-1 {
-    left: 7%;
+.book>h3 {
+    padding-bottom: 1.15em;
+    font-size: 150%;
+    text-align: center;
+    text-transform: uppercase;
 }
+
+.book>ul {
+    font-size: 120%;
+    text-align: left;
+}
+
+.book li {
+    padding-bottom: 1.5em;
+}
+
+
 
 
 /* Footer */
@@ -329,6 +406,13 @@ footer h4 {
 /* Media Queries */
 
 @media screen and (max-width: 1920px){
+    #navWrapper{
+        display: block;
+    }
+    .collapsible{
+        display: none;
+    }
+
     #welcome-hero, #welcome-edge {
         height: 50vw;
     }
@@ -345,6 +429,20 @@ footer h4 {
 
     p {
         font-size: 100%;
+    }
+
+    #navbar{
+        display: flex;
+        justify-content: center;
+    }
+    #navbar>li{
+        font-size: 0.9em;
+    }
+    #navWrapper{
+        display: block;
+    }
+    .collapsible{
+        display: none;
     }
 
     #welcome-card {
@@ -411,8 +509,20 @@ footer h4 {
     }
 
     #navbar {
-        height: 70px;
-        line-height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #navbar>li {
+        font-size: 0.7em;
+    }
+
+    #navWrapper {
+        display: block;
+    }
+
+    .collapsible {
+        display: none;
     }
 
     #welcome-card h2, #profile-card h2 {
@@ -436,6 +546,32 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px){
+    /* Switch from standard nav to collapsed nav */
+    #navWrapper {
+        display: none;
+    }
+
+    .collapsible {
+        display: block;
+    }
+ 
+    #mw-title {
+        padding-right: 20px;
+        font-size: 330%;
+    }
+
+    #welcome-card {
+        width:40%;
+        right:10%;
+    }
+
+    #welcome-card>h2 {
+        font-size: 100%;
+    }
+    #welcome-card>p {
+        font-size:75%
+    }
+
     .about-panel div {
         display: block;
     }
@@ -468,6 +604,30 @@ footer h4 {
 }
 
 @media screen and (max-width: 426px){
+    #navbar {
+        padding: 1px 3px 1px 3px;
+        font-size: 45%;
+        line-height: 70px;
+    }
+
+    #navbar>li {
+        padding: 1px 3px 1px 3px;
+    }
+    #mw-title {
+        font-size:240%;
+        padding-right: 10px;
+    }
+    #welcome-card {
+        width:40%;
+        right:10%;
+    }
+    #welcome-card>h2 {
+        font-size: 100%;
+    }
+    #welcome-card>p {
+        font-size:75%
+    }
+
     footer {
         height: 280px;
     }

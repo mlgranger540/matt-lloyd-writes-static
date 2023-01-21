@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/22fc12a701.js" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -19,7 +20,7 @@
             <img src="assets/images/mw-logo.png" alt="Matt Lloyd Writes logo" id="mw-logo">
             <h1 id="mw-title">Matt L loyd Writes</h1>
         </div>
-        <nav>
+        <nav id="navWrapper">
             <ul id="navbar">
                 <li>
                     <a href="index.html">Home</a>
@@ -38,51 +39,148 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="collapsible" onclick="openNav()">Menu</button>
+        <div id="collapsedContent">
+            <ul id="collapsedNavbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="p2-about.html">About the Author</a>
+                </li>
+                <li class="active">
+                    <a href="p3-books.html">My Books</a>
+                </li>
+                <li>
+                    <a href="p4-studio.html">Writing Studio</a>
+                </li>
+                <li>
+                    <a href="p5-contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <section id="books-intro">
-        <!-- <div></div> -->
-        <div id="books-intro-card" class="card">
+    <section id="book-page">
+        <div id="books-intro-panel" class="panel">
             <h2>My Books</h2>
             <p>Here are all the books I've published to date, sorted by genre.</p>
         </div>
-    </section>
-    <section id="books-scifi">
-        <h2>Sci-Fi</h2>
-        <div class="card book-card-1">
-            <h3>Starburst Skies</h3>
-            <ul>
-                <li>Genres: </li>
-                <li>Rating: </li>
-                <li>Word Count: </li>
-                <li>Page Count: </li>
-                <li>Themes: </li>
-                <li>Main characters: </li>
-                <li>Summary: </li>
-            </ul>
+        <div class="bookshelf">
+            <h2>Sci-Fi</h2>
+            <div class="book book-panel-1">
+                <h3>Starburst Skies</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-2">
+                <h3>Reality Synthesised</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-3">
+                <h3>Wishbones</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
         </div>
-        <div class="card book-card-2">
-            <h3>Virtually Real</h3>
-            <ul>
-                <li>Genres: </li>
-                <li>Rating: </li>
-                <li>Word Count: </li>
-                <li>Page Count: </li>
-                <li>Themes: </li>
-                <li>Main characters: </li>
-                <li>Summary: </li>
-            </ul>
+        <div class="bookshelf">
+            <h2>Fantasy</h2>
+            <div class="book book-panel-1">
+                <h3>Curfew</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-2">
+                <h3>Mind Games</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-3">
+                <h3>Toby</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
         </div>
-        <div class="card book-card-3">
-            <h3>Wishbones</h3>
-            <ul>
-                <li>Genres: </li>
-                <li>Rating: </li>
-                <li>Word Count: </li>
-                <li>Page Count: </li>
-                <li>Themes: </li>
-                <li>Main characters: </li>
-                <li>Summary: </li>
-            </ul>
+        <div class="bookshelf">
+            <h2>Romance</h2>
+            <div class="book book-panel-1">
+                <h3>Hooked</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-2">
+                <h3>Watercolour Memories</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
+            <div class="book book-panel-3">
+                <h3>Lightning</h3>
+                <ul>
+                    <li>Genres: </li>
+                    <li>Rating: </li>
+                    <li>Word Count: </li>
+                    <li>Page Count: </li>
+                    <li>Themes: </li>
+                    <li>Main characters: </li>
+                    <li>Summary: </li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>

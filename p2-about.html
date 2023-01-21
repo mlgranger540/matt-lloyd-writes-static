@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/22fc12a701.js" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -19,7 +20,7 @@
             <img src="assets/images/mw-logo.png" alt="Matt Lloyd Writes logo" id="mw-logo">
             <h1 id="mw-title">Matt L loyd Writes</h1>
         </div>
-        <nav>
+        <nav id="navWrapper">
             <ul id="navbar">
                 <li>
                     <a href="index.html">Home</a>
@@ -38,6 +39,26 @@
                 </li>
             </ul>
         </nav>
+        <button type="button" class="collapsible" onclick="openNav()">Menu</button>
+        <div id="collapsedContent">
+            <ul id="collapsedNavbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="p2-about.html">About the Author</a>
+                </li>
+                <li>
+                    <a href="p3-books.html">My Books</a>
+                </li>
+                <li>
+                    <a href="p4-studio.html">Writing Studio</a>
+                </li>
+                <li>
+                    <a href="p5-contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <section id="profile-edge">
         <div id="profile-hero"></div>
