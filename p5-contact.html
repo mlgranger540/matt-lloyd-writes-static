@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Lloyd Writes | Writing Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22fc12a701.js" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <img src="assets/images/mw-logo.png" alt="Matt Lloyd Writes logo" id="mw-logo">
+            <h1 id="mw-title">Matt L loyd Writes</h1>
+        </div>
+        <nav id="navWrapper">
+            <ul id="navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="p2-about.html">About the Author</a>
+                </li>
+                <li>
+                    <a href="p3-books.html">My Books</a>
+                </li>
+                <li>
+                    <a href="p4-studio.html">Writing Studio</a>
+                </li>
+                <li class="active">
+                    <a href="p5-contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button type="button" class="collapsible" onclick="openNav()">Menu</button>
+        <div id="collapsedContent">
+            <ul id="collapsedNavbar">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="p2-about.html">About the Author</a>
+                </li>
+                <li>
+                    <a href="p3-books.html">My Books</a>
+                </li>
+                <li>
+                    <a href="p4-studio.html">Writing Studio</a>
+                </li>
+                <li class="active">
+                    <a href="p5-contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="contact-edge">
+        <div id="contact-hero"></div>
+        <div id="mailing-list-card" class="card">
+            <h2>Join the Mailing List!</h2>
+            <form action="https://formdump.codeinstitute.net" method="POST">
+                <div id="name-labels">
+                    <label for="first-name" id="first-name-label">First Name</label>
+                    <label for="surname" id="surname-label">Surname</label>
+                </div>
+                <div id="name-inputs">
+                    <input type="text" id="first-name" name="first-name" placeholder="Matt">
+                    <input type="text" id="surname" name="surname" placeholder="Lloyd">
+                </div>
+                <label for="email" id="email-label">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="mattlloydwrites@gmail.com">
+                <p>What types of books would you like to hear updates on?</p>
+                <input type="checkbox" id="scifi-check">
+                <label for="scifi-check">Sci-Fi</label>
+                <input type="checkbox" id="fantasy-check">
+                <label for="fantasy-check">Fantasy</label>
+                <input type="checkbox" id="romance-check">
+                <label for="romance-check">Romance</label>
+                <br>
+                <input type="submit" value="Sign Up!">
+            </form>
+        </div>
+        <div id="contact-card" class="card">
+            <h2>Connect with Me</h2>
+            <ul>
+                <li class="social-buttons">
+                    <a href="https://www.gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i> mattlloydwrites@gmail.com</a>
+                </li>
+                <li class="social-buttons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                </li>
+                <li class="social-buttons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </li>
+                <li class="social-buttons">
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i> Twitter</a>
+                </li>
+                <li class="social-buttons">
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i> YouTube</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-nav">
+            <div id="site-section-1" class="site-section">
+                <h3>About the Author</h3>
+                <ul>
+                    <li class="site-sub-section">
+                        <a href="p2-about.html#about-history">Writing History</a>
+                    </li>
+                    <li class="site-sub-section">
+                        <a href="p2-about.html#about-genre-audience">Genres and Audience</a>
+                    </li>
+                    <li class="site-sub-section">
+                        <a href="p2-about.html#about-why-write">Why I Write</a>
+                    </li>
+                </ul>
+                <h4>©2023 Matt Lloyd</h4>
+            </div>
+            <div id="site-section-2" class="site-section">
+                <h3>My Books</h3>
+                <ul>
+                    <li class="site-sub-section">
+                        <a href="p3-books.html#scifi">Sci-Fi</a>
+                    </li>
+                    <li class="site-sub-section">
+                        <a href="p3-books.html#fantasy">Fantasy</a>
+                    </li>
+                    <li class="site-sub-section">
+                        <a href="p3-books.html#romance">Romance</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="site-section-stack">
+                <div id="site-section-3" class="site-section">
+                    <h3>Writing Studio</h3>
+                    <ul>
+                        <li class="site-sub-section">
+                            <a href="p4-studio.html#getting-started">Getting Started</a>
+                        </li>
+                        <li class="site-sub-section">
+                            <a href="p4-studio.html#tips">Writing Tips</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="site-section-4" class="site-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li class="social-buttons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li class="social-buttons">
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="social-buttons">
+                            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        </li>
+                        <li class="social-buttons">
+                            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
