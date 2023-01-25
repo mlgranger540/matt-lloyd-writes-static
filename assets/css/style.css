@@ -29,7 +29,7 @@ h2 {
     text-transform: uppercase;
 }
 
-p {
+p, label {
     padding-bottom: 0.65rem;
     font-size: 115%;
     color: #DDD;
@@ -72,8 +72,8 @@ ul {
     height: 90%;
     box-sizing: border-box;
     color: #000;
-    /* background-color: rgba(0, 0, 0, 0.8); */
-    background-color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -115,11 +115,12 @@ ul {
 
 #navbar li:hover {
     background-color: #d31a33;
-    /* color: #FFF; */
+    color: #fff;
 }
 
 .active {
     background-color: #d31a33;
+    color: #fff;
 }
 
 
@@ -136,7 +137,7 @@ ul {
 
 .collapsible:hover {
     background-color: #d31a33;
-    color:#fff;
+    color: #fff;
     transition: 0.3s;
 }
 
@@ -221,15 +222,6 @@ ul {
     position: relative;
 }
 
-@keyframes zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.06);
-    }
-}
-
 #profile-card {
     left: 11.5%;
     top: 15%;
@@ -295,15 +287,11 @@ ul {
 /* Page 3 - My Books */
 
 #book-page {
-    padding-top: 2%;
+    padding: 2.2% 0 2.2% 0;
     width: 100%;
-    height: 137vw;
+    height: fit-content;
     background: url(../images/forest.jpg) top center / cover no-repeat fixed;
     /* filter: blur(2px); */
-}
-
-#books-intro {
-    height: 16vw;
 }
 
 #books-intro-panel {
@@ -316,17 +304,31 @@ ul {
 
 .bookshelf {
     display: block;
-    margin: 0 auto;
-    height: 40vw;
+    margin-bottom: 2%;
+    height: fit-content;
     text-align: center;
 }
 
+#romance {
+    margin-bottom: 0;
+}
+
+.bookshelf>h2 {
+    margin: 1% 0 1% 0;
+    padding-top: 1.15rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .book-panel-1 {
-    margin-right: 4%;
+    margin-left: 4%;
+}
+
+.book-panel-2 {
+    margin: 0 2% 0 2%;
 }
 
 .book-panel-3 {
-    margin-left: 4%;
+    margin-right: 4%;
 }
 
 .book>h3 {
@@ -342,10 +344,164 @@ ul {
 }
 
 .book li {
-    padding-bottom: 1.5em;
+    padding-bottom: 1.3em;
 }
 
 
+/* Page 4 - Writing Studio */
+
+#studio-hero {
+    padding: 2.4% 0;
+    width: 100%;
+    height: fit-content;
+    background: url(../images/writing.jpg) center center / cover no-repeat;
+}
+
+#studio-title-card {
+    left: 11.5%;
+    top: 35%;
+    width: 25%;
+    height: 28%;
+}
+
+#studio-title-card h2 {
+    font-size: 200%;
+    padding: 5% 0 0 2%;
+}
+
+.studio-card {
+    flex-direction: column;
+}
+
+#getting-started {
+    margin: 8% 0 0 40%;
+    width: 55%;
+    height: fit-content;
+}
+
+#tips {
+    margin: 2.4% 0 0 5%;
+    width: 82%;
+    height: fit-content;
+}
+
+.studio-card ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.studio-card li {
+    padding-bottom: 0.65rem;
+    font-size: 115%;
+    color: #DDD;
+    line-height: 28px;
+}
+
+
+/* Page 5 - Contact */
+
+#contact-hero {
+    width: 100%;
+    height: 50vw;
+    background: url(../images/view.jpg) center center / cover no-repeat;
+    filter: blur(1px);
+}
+
+#contact-edge {
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    position: relative;
+}
+
+#mailing-list-card {
+    left: 19.5%;
+    top: 15%;
+    width: 28%;
+    height: 62%;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+#mailing-list-card h2 {
+    font-size: 200%;
+}
+
+#name-labels {
+    display: block;
+}
+
+#name-inputs {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#first-name, #surname, #first-name-label, #surname-label {
+    display: inline-block;
+    width: 40%;
+}
+
+#surname {
+    width: 45.5%;
+}
+
+#surname-label, #surname {
+    margin-left: 0.7rem;
+}
+
+#first-name-label, #surname-label {
+    margin-bottom: 0;
+    padding-bottom: 0.4rem;
+}
+
+#email-label {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+#email {
+    display: block;
+    width: 90%;
+    margin-bottom: 1.1rem;
+}
+
+#mailing-list-card input[type="text"], #mailing-list-card input[type="email"] {
+    font-family: Calibri, sans-serif;
+    font-size: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#mailing-list-card input[type="checkbox"] {
+    margin: 0 2% 0 2%;
+    background-color: #FE233F;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 8%;
+    padding: 10px;
+    font-size: 125%;
+    text-transform: uppercase;
+    color: #111;
+    background-color: #FE233F;
+}
+
+#contact-card {
+    padding: 5%;
+    right: 16%;
+    top: 18%;
+    width: 27%;
+    height: 50%;
+}
+
+#contact-card li {
+    display: block;
+    color: #DDD;
+}
+
+#contact-card .social-buttons {
+    font-size: 85%;
+}
 
 
 /* Footer */
@@ -554,10 +710,15 @@ footer h4 {
     .collapsible {
         display: block;
     }
- 
+
+    #mw-logo {
+        width: 80px;
+        height: 80px;
+    }
+
     #mw-title {
         padding-right: 20px;
-        font-size: 330%;
+        font-size: 350%;
     }
 
     #welcome-card {
@@ -579,6 +740,14 @@ footer h4 {
     #about-history, #about-genre-audience, #about-why-write {
         flex-direction: column;
         width: fit-content;
+    }
+
+    #about-history h2, #about-genre-audience h2, #about-why-write h2 {
+        padding: 4% 0 1.15rem 4%;
+    }
+    
+    #about-history li, #about-genre-audience li, #about-why-write li {
+        font-size: 80%;
     }
 
     footer {
