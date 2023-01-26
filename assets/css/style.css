@@ -16,29 +16,29 @@ body {
 
 h1 {
     font-family: Ruthie, cursive;
-    font-size: 600%;
+    font-size: 625%;
     color: #FE233F;
     text-shadow: 6px 8px #111;
     line-height: 130px;
 }
 
 h2 {
-    padding-bottom: 1.15rem;
-    font-size: 175%;
+    padding-bottom: 1.5rem;
+    font-size: 180%;
     color: #DDD;
     text-transform: uppercase;
 }
 
 p, label {
     padding-bottom: 0.65rem;
-    font-size: 115%;
+    font-size: 125%;
     color: #DDD;
     line-height: 28px;
 }
 
 a {
     text-decoration: none;
-    font-size: 150%;
+    font-size: 170%;
     color: inherit;
 }
 
@@ -49,9 +49,17 @@ ul {
 .card {
     clear: both;
     position: absolute;
-    padding: 4%;
+    padding: 4.2%;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.75);
+}
+
+.card h2 {
+    font-size: 210%;
+}
+
+.card p {
+    font-size: 150%;
 }
 
 .panel {
@@ -85,24 +93,24 @@ ul {
 
 #mw-logo {
     float: left;
-    width: 118px;
-    height: 118px;
+    width: 122px;
+    height: 122px;
     padding: 12px 0px 12px 20px;
 }
 
 #mw-title {
     display: block;
     text-align: center;
-    padding-right: 118px;
+    padding-right: 122px;
 }
 
 #navbar {
     clear: both;
     display: block;
     width: 100%;
-    height: 90px;
+    height: 92px;
     background-color: #FE233F;
-    line-height: 65px;
+    line-height: 92px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -110,7 +118,7 @@ ul {
 #navbar li {
     display: inline-block;
     text-transform: uppercase;
-    padding: 11px 30px;
+    padding: 0px 35px;
 }
 
 #navbar li:hover {
@@ -127,12 +135,13 @@ ul {
 /* Collapsable navbar classes */
 
 .collapsible {
+    display: none;
     font-size: 1.2em;
     background-color: #FE233F;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
 }
 
 .collapsible:hover {
@@ -193,14 +202,6 @@ ul {
     height: 58%;
 }
 
-#welcome-card h2 {
-    font-size: 200%;
-}
-
-#welcome-card p {
-    font-size: 130%;
-}
-
 
 /* Page 2 - About the Author */
 
@@ -227,14 +228,6 @@ ul {
     top: 15%;
     width: 26.5%;
     height: 55%;
-}
-
-#profile-card h2 {
-    font-size: 200%;
-}
-
-#profile-card p {
-    font-size: 130%;
 }
 
 .about-panel div {
@@ -291,13 +284,14 @@ ul {
     width: 100%;
     height: fit-content;
     background: url(../images/forest.jpg) top center / cover no-repeat fixed;
+    position: relative;
     /* filter: blur(2px); */
 }
 
 #books-intro-panel {
     display: block;
     width: 100%;
-    padding: 3%;
+    padding: 2.5%;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
@@ -355,18 +349,14 @@ ul {
     width: 100%;
     height: fit-content;
     background: url(../images/writing.jpg) center center / cover no-repeat;
+    position: relative;
 }
 
 #studio-title-card {
-    left: 11.5%;
-    top: 35%;
-    width: 25%;
-    height: 28%;
-}
-
-#studio-title-card h2 {
-    font-size: 200%;
-    padding: 5% 0 0 2%;
+    left: 12%;
+    top: 4%;
+    width: 22%;
+    height: fit-content;
 }
 
 .studio-card {
@@ -380,8 +370,8 @@ ul {
 }
 
 #tips {
-    margin: 2.4% 0 0 5%;
-    width: 82%;
+    margin: 2.4% 0 0 5.2%;
+    width: 80%;
     height: fit-content;
 }
 
@@ -418,7 +408,7 @@ ul {
     left: 19.5%;
     top: 15%;
     width: 28%;
-    height: 62%;
+    height: fit-content;
     background-color: rgba(34, 34, 34, 0.9);
 }
 
@@ -432,7 +422,7 @@ ul {
 
 #name-inputs {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 #first-name, #surname, #first-name-label, #surname-label {
@@ -441,7 +431,7 @@ ul {
 }
 
 #surname {
-    width: 45.5%;
+    width: 47%;
 }
 
 #surname-label, #surname {
@@ -462,7 +452,7 @@ ul {
 #email {
     display: block;
     width: 90%;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 #mailing-list-card input[type="text"], #mailing-list-card input[type="email"] {
@@ -472,7 +462,7 @@ ul {
 }
 
 #mailing-list-card input[type="checkbox"] {
-    margin: 0 2% 0 2%;
+    margin: 0.8rem;
     background-color: #FE233F;
 }
 
@@ -491,7 +481,7 @@ input[type=submit] {
     right: 16%;
     top: 18%;
     width: 27%;
-    height: 50%;
+    height: fit-content;
 }
 
 #contact-card li {
@@ -524,9 +514,13 @@ footer {
     text-align: left;
 }
 
+.site-section h3 {
+    font-size: 140%;
+}
+
 .site-sub-section {
     display: block;
-    font-size: 70%;
+    font-size: 75%;
     line-height: 30px;
     text-align: left;
 }
@@ -553,7 +547,7 @@ footer {
 }
 
 footer h4 {
-    font-size: 100%;
+    font-size: 110%;
     padding-top: 16px;
 }
 
@@ -562,10 +556,53 @@ footer h4 {
 /* Media Queries */
 
 @media screen and (max-width: 1920px){
-    #navWrapper{
+    h1 {
+        font-size: 540%;
+    }
+
+    h2 {
+        font-size: 170%;
+    }
+
+    p {
+        font-size: 115%;
+    }
+
+    a {
+        font-size: 145%;
+    }
+
+    .card h2 {
+        font-size: 185%;
+    }
+
+    .card p {
+        font-size: 130%;
+    }
+
+    #mw-logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    #mw-title {
+        padding-right: 110px;
+    }
+
+    #navbar {
+        height: 85px;
+        line-height: 85px;
+    }
+
+    #navbar>li {
+        padding: 0px 32px;
+    }
+
+    #navWrapper {
         display: block;
     }
-    .collapsible{
+
+    .collapsible {
         display: none;
     }
 
@@ -576,28 +613,77 @@ footer h4 {
     #profile-hero, #profile-edge {
         height: 55vw;
     }
+
+    #mailing-list-card input[type="checkbox"] {
+        margin: 0.5rem;
+    }
+
+    .site-section {
+        padding: 30px 50px 15px 50px;
+    }
+
+    .site-section h3 {
+        font-size: 125%;
+    }
+
+    .social-buttons {
+        font-size: 86%;
+    }
 }
 
 @media screen and (max-width: 1440px){
+    h1 {
+        font-size: 460%;
+        line-height: 115px;
+    }
+
     h2 {
-        font-size: 160%;
+        font-size: 135%;
     }
 
-    p {
-        font-size: 100%;
+    p, li {
+        font-size: 95%;
     }
 
-    #navbar{
+    a {
+        font-size: 140%;
+    }
+
+    .card h2 {
+        font-size: 165%;
+        padding-bottom: 1rem;
+    }
+
+    .card p {
+        font-size: 110%;
+    }
+
+    #mw-logo {
+        width: 98px;
+        height: 98px;
+    }
+
+    #mw-title {
+        padding-right: 95px;
+    }
+
+    #navbar {
         display: flex;
         justify-content: center;
+        height: 75px;
+        line-height: 75px;
     }
-    #navbar>li{
-        font-size: 0.9em;
+
+    #navbar>li {
+        font-size: 88%;
+        padding: 0px 28px;
     }
-    #navWrapper{
+
+    #navWrapper {
         display: block;
     }
-    .collapsible{
+
+    .collapsible {
         display: none;
     }
 
@@ -609,21 +695,65 @@ footer h4 {
         width: 27%;
     }
 
-    #welcome-card h2, #profile-card h2 {
-        font-size: 180%;
+    .about-panel li {
+        padding-left: 0.5rem;
     }
 
-    #welcome-card p, #profile-card p {
-        font-size: 110%;
+    .book>h3 {
+        font-size: 130%;
+    }
+
+    .book>ul {
+        font-size: 105%;
+    }
+
+    #tips li {
+        font-size: 95%;
+    }
+
+    label {
+        font-size: 100%;
+    }
+
+    #mailing-list-card h2 {
+        font-size: 170%;
+    }
+
+    #mailing-list-card p {
+        font-size: 100%;
+    }
+
+    #surname {
+        width: 45%;
+    }
+
+    #first-name-label, #surname-label, #email-label {
+        padding-bottom: 0.2rem;
+    }
+
+    #name-inputs, #email {
+        margin-bottom: 0.7rem;
+    }
+
+    #mailing-list-card input[type="checkbox"] {
+        margin: 0.3rem;
+    }
+
+    input[type=submit] {
+        font-size: 115%;
+    }
+
+    #contact-card h2 {
+        font-size: 150%;
+    }
+
+    #contact-card a {
+        font-size: 125%;
     }
 
     .site-section {
-        padding: 30px 50px 15px 50px;
-        font-size: 98%;
-    }
-
-    .site-sub-section {
-        font-size: 68%;
+        padding: 30px 40px 15px 40px;
+        font-size: 86%;
     }
 
     .social-buttons {
@@ -634,43 +764,69 @@ footer h4 {
 
 @media screen and (max-width: 1025px){
     h1 {
-        font-size: 450%;
+        font-size: 420%;
         line-height: 110px;
     }
 
     h2 {
-        font-size: 140%;
+        font-size: 130%;
     }
 
     p {
         font-size: 80%;
         text-align: left;
+        line-height: 24px;
     }
 
     a {
         font-size: 130%;
     }
 
+    .card h2 {
+        font-size: 130%;
+        padding-bottom: 0.8rem;
+    }
+
+    .card p {
+        font-size: 90%;
+    }
+
     .panel {
         display: inline;
     }
 
+    .panel li {
+        font-size: 80%;
+    }
+
+    .book h3 {
+        font-size: 120%;
+    }
+
+    .book li {
+        font-size: 80%;
+    }
+
     #mw-logo {
-        width: 90px;
-        height: 90px;
+        width: 88px;
+        height: 88px;
+        padding-left: 15px;
     }
 
     #mw-title {
-        padding-right: 90px;
+        padding-right: 70px;
     }
 
     #navbar {
         display: flex;
         justify-content: center;
+        height: 70px;
+        line-height: 70px;
     }
 
     #navbar>li {
-        font-size: 0.7em;
+        font-size: 90%;
+        padding: 0px 20px;
     }
 
     #navWrapper {
@@ -681,27 +837,131 @@ footer h4 {
         display: none;
     }
 
-    #welcome-card h2, #profile-card h2 {
-        font-size: 140%;
-        padding-bottom: 0.8rem;
+    .about-panel {
+        padding: 2% 4% 3% 4%;
     }
 
-    #welcome-card p, #profile-card p {
+    .about-panel h2 {
+        padding: 4% 0 3% 4%;
+    }
+
+    #books-intro-panel h2 {
+        padding: 0.7rem 0 0.8rem 0;
+    }
+
+    #books-intro-panel p {
+        text-align: center;
+    }
+
+    .bookshelf h2 {
+        padding: 1rem;
+    }
+
+    #studio-title-card {
+        top: 2%;
+        left: 10%;
+        width: 23%;
+    }
+
+    #studio-title-card h2 {
+        font-size: 125%;
+    }
+
+    #getting-started {
+        margin-left: 35%;
+        width: 60%;
+    }
+
+    #tips {
+        width: 82%;
+    }
+
+    .studio-card {
+        display: flex;
+    }
+
+    label {
+        font-size: 90%;
+    }
+
+    #mailing-list-card {
+        top: 12%;
+        left: 16%;
+        width: 30%;
+    }
+
+    #mailing-list-card h2 {
+        font-size: 138%;
+        padding-bottom: 0.5rem;
+    }
+
+    #mailing-list-card p {
+        font-size: 90%;
+    }
+
+    #first-name-label, #surname-label, #email-label {
+        padding-bottom: 0;
+    }
+
+    #surname {
+        width: 43%;
+    }
+
+    #mailing-list-card input[type="text"], #mailing-list-card input[type="email"] {
+        font-size: 85%;
+    }
+
+    #mailing-list-card input[type="checkbox"] {
+        margin: 0.1rem;
+    }
+
+    input[type=submit] {
         font-size: 80%;
-        line-height: 21px;
+    }
+
+    #contact-card {
+        width: 28%;
+    }
+
+    #contact-card h2 {
+        font-size: 130%;
+    }
+
+    #contact-card a {
+        font-size: 100%;
+    }
+
+    footer {
+        height: 245px;
     }
 
     .site-section {
-        padding: 30px 30px 15px 30px;
-        font-size: 96%;
+        padding: 20px 30px 15px 30px;
     }
 
-    .site-sub-section {
-        font-size: 66%;
+    .site-section h3 {
+        font-size: 110%;
     }
 }
 
 @media screen and (max-width: 768px){
+    h1 {
+        font-size: 350%;
+        line-height: 85px;
+    }
+
+    .card {
+        padding: 6%;
+    }
+
+    .card h2 {
+        font-size: 105%;
+    }
+
+    .card p {
+        font-size: 85%;
+    }
+
     /* Switch from standard nav to collapsed nav */
     #navWrapper {
         display: none;
@@ -712,25 +972,40 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 80px;
-        height: 80px;
+        width: 72px;
+        height: 72px;
     }
 
     #mw-title {
-        padding-right: 20px;
-        font-size: 350%;
+        padding-right: 40px;
+    }
+
+    #welcome-hero, #welcome-edge, #contact-hero, #contact-edge {
+        height: 70vw;
     }
 
     #welcome-card {
-        width:40%;
-        right:10%;
+        right: 10%;
+        width: 36%;
+        height: 56%;
     }
 
-    #welcome-card>h2 {
-        font-size: 100%;
+    #profile-hero, #profile-edge {
+        height: 65vw;
     }
-    #welcome-card>p {
-        font-size:75%
+
+    #profile-card {
+        padding: 4.5%;
+        left: 10%;
+        width: 28%;
+    }
+
+    #profile-card h2 {
+        font-size: 99%;
+    }
+
+    #profile-card p {
+        font-size: 76%;
     }
 
     .about-panel div {
@@ -750,29 +1025,65 @@ footer h4 {
         font-size: 80%;
     }
 
+    #mailing-list-card {
+        left: 10%;
+        width: 38%;
+    }
+
+    #contact-card {
+        right: 10%;
+        width: 35%;
+    }
+
     footer {
-        height: 315px;
+        height: 250px;
     }
 
     .site-section {
-        padding: 30px 20px 15px 20px;
-        font-size: 94%;
+        padding: 15px 20px 15px 20px;
+        font-size: 85%;
     }
 
-    .site-sub-section {
-        font-size: 64%;
+    #site-section-4 h3 {
+        line-height: 25px;
     }
 
     #site-section-stack {
         flex-direction: column;
     }
 
+    .social-buttons {
+        padding-top: 0;
+    }
+
     footer h4 {
-        padding-top: 65px;
+        padding-top: 25px;
     }
 }
 
 @media screen and (max-width: 426px){
+    h1 {
+        font-size: 280%;
+    }
+
+    h2 {
+        font-size: 110%;
+    }
+
+    .card h2 {
+        font-size: 100%;
+        padding-bottom: 0.3rem;
+    }
+
+    .card p {
+        font-size: 75%;
+        line-height: 18px;
+    }
+
+    .panel {
+        width: 90%;
+    }
+    
     #navbar {
         padding: 1px 3px 1px 3px;
         font-size: 45%;
@@ -782,23 +1093,105 @@ footer h4 {
     #navbar>li {
         padding: 1px 3px 1px 3px;
     }
+
+    #mw-logo {
+        width: 60px;
+        height: 60px;
+        padding-left: 15px;
+    }
+
     #mw-title {
-        font-size:240%;
-        padding-right: 10px;
+        padding-right: 5px;
     }
+
+    #welcome-hero, #welcome-edge {
+        height: 100vw;
+    }
+
     #welcome-card {
-        width:40%;
-        right:10%;
+        padding: 7%;
+        width: 45%;
+        right: 10%;
     }
-    #welcome-card>h2 {
-        font-size: 100%;
+
+    #profile-hero, #profile-edge {
+        height: 90vw;
     }
-    #welcome-card>p {
-        font-size:75%
+
+    #profile-card {
+        left: 5%;
+        width: 30%;
+    }
+
+    #profile-card h2 {
+        font-size: 90%;
+    }
+
+    #profile-card p {
+        font-size: 70%;
+    }
+
+    #history-panel, #why-write-panel {
+        margin: 2% 0;
+    }
+
+    #genre-audience-panel {
+        margin: 0 10%;
+    }
+
+    .about-panel li {
+        font-size: 80%;
+        padding-left: 0.3rem;
+    }
+
+    #books-intro-panel h2 {
+        padding-bottom: 0.3rem;
+    }
+
+    .book {
+        display: block;
+        width: 84%;
+    }
+
+    .book-panel-1, .book-panel-2, .book-panel-3 {
+        margin: 2.5% 8%;
+    }
+
+    #studio-title-card {
+        position: static;
+        margin: 0 auto;
+        width: 48%;
+        margin-top: 2%;
+    }
+
+    #getting-started, #tips {
+        width: 90%;
+        margin: 4% 5%;
+    }
+
+    #contact-hero, #contact-edge {
+        height: 152vw;
+    }
+
+    #mailing-list-card, #contact-card {
+        margin: 4% 10%;
+    }
+
+    #mailing-list-card {
+        left: 0;
+        top: 2%;
+        width: 65%;
+    }
+
+    #contact-card {
+        padding: 7%;
+        right: 5%;
+        top: 56%;
+        width: 58%;
     }
 
     footer {
-        height: 280px;
+        height: 210px;
     }
     
     .site-section {
@@ -808,11 +1201,19 @@ footer h4 {
         white-space: nowrap;
     }
 
+    .site-section h3 {
+        line-height: 26px;
+    }
+
     .site-sub-section {
-        font-size: 55%;
+        line-height: 24px;
+    }
+
+    #site-section-4 h3 {
+        line-height: 14px;
     }
 
     footer h4 {
-        padding-top: 50px;
+        padding-top: 20px;
     }
 }
