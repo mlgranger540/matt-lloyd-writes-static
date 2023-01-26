@@ -224,10 +224,10 @@ ul {
 }
 
 #profile-card {
-    left: 11.5%;
-    top: 15%;
-    width: 26.5%;
-    height: 55%;
+    left: 12%;
+    top: 17%;
+    width: 22%;
+    height: fit-content;
 }
 
 .about-panel div {
@@ -614,6 +614,11 @@ footer h4 {
         height: 55vw;
     }
 
+    #profile-card {
+        left: 11.5%;
+        width: 24%;
+    }
+
     #mailing-list-card input[type="checkbox"] {
         margin: 0.5rem;
     }
@@ -692,7 +697,8 @@ footer h4 {
     }
 
     #profile-card {
-        width: 27%;
+        left: 11%;
+        width: 25.5%;
     }
 
     .about-panel li {
@@ -835,6 +841,12 @@ footer h4 {
 
     .collapsible {
         display: none;
+    }
+
+    #profile-card {
+        left: 10%;
+        top: 15%;
+        width: 28%;
     }
 
     .about-panel {
@@ -996,8 +1008,9 @@ footer h4 {
 
     #profile-card {
         padding: 4.5%;
-        left: 10%;
-        width: 28%;
+        left: 8%;
+        top: 13%;
+        width: 30%;
     }
 
     #profile-card h2 {
@@ -1119,16 +1132,18 @@ footer h4 {
     }
 
     #profile-card {
-        left: 5%;
-        width: 30%;
+        padding: 4%;
+        left: 3%;
+        top: 7%;
+        width: 35%;
     }
 
     #profile-card h2 {
-        font-size: 90%;
+        font-size: 86%;
     }
 
     #profile-card p {
-        font-size: 70%;
+        font-size: 64%;
     }
 
     #history-panel, #why-write-panel {
@@ -1160,8 +1175,9 @@ footer h4 {
     #studio-title-card {
         position: static;
         margin: 0 auto;
-        width: 48%;
+        width: 54%;
         margin-top: 2%;
+        text-align: center;
     }
 
     #getting-started, #tips {
