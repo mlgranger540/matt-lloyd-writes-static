@@ -16,10 +16,8 @@ body {
 
 h1 {
     font-family: Ruthie, cursive;
-    font-size: 625%;
     color: #FE233F;
     text-shadow: 6px 8px #111;
-    line-height: 130px;
 }
 
 h2 {
@@ -100,7 +98,9 @@ ul {
 
 #mw-title {
     display: block;
+    font-size: 375%;
     text-align: center;
+    line-height: 136px;
     padding-right: 122px;
 }
 
@@ -126,6 +126,10 @@ ul {
     color: #fff;
 }
 
+#navbar a:hover {
+    text-decoration: underline;
+}
+
 .active {
     background-color: #d31a33;
     color: #fff;
@@ -148,6 +152,7 @@ ul {
     background-color: #d31a33;
     color: #fff;
     transition: 0.3s;
+    text-decoration: underline;
 }
 
 #collapsedContent {
@@ -164,6 +169,10 @@ ul {
     background-color: #d31a33;
     transition: 0.3s;
     color: #fff;
+}
+
+#collapsedContent a:hover {
+    text-decoration: underline;
 }
 
 
@@ -392,14 +401,16 @@ ul {
 
 #contact-hero {
     width: 100%;
-    height: 50vw;
-    background: url(../images/view.jpg) center center / cover no-repeat;
+    height: 55vw;
+    /*background: url(../images/view.jpg) center center / cover no-repeat;*/
     filter: blur(1px);
+    overflow: hidden;
+    position: absolute;
 }
 
 #contact-edge {
     width: 100%;
-    height: 50vw;
+    height: 55vw;
     overflow: hidden;
     position: relative;
 }
@@ -525,6 +536,10 @@ footer {
     text-align: left;
 }
 
+.site-sub-section a:hover {
+    text-decoration: underline;
+}
+
 #site-section-1 {
     display: inline-block;
 }
@@ -556,10 +571,6 @@ footer h4 {
 /* Media Queries */
 
 @media screen and (max-width: 1920px){
-    h1 {
-        font-size: 540%;
-    }
-
     h2 {
         font-size: 170%;
     }
@@ -581,12 +592,13 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 110px;
-        height: 110px;
+        width: 105px;
+        height: 105px;
     }
 
     #mw-title {
-        padding-right: 110px;
+        padding-right: 105px;
+        line-height: 122px;
     }
 
     #navbar {
@@ -637,11 +649,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 1440px){
-    h1 {
-        font-size: 460%;
-        line-height: 115px;
-    }
-
     h2 {
         font-size: 135%;
     }
@@ -664,12 +671,14 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 98px;
-        height: 98px;
+        width: 96px;
+        height: 96px;
     }
 
     #mw-title {
-        padding-right: 95px;
+        padding-right: 94px;
+        font-size: 350%;
+        line-height: 110px;
     }
 
     #navbar {
@@ -769,11 +778,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 1025px){
-    h1 {
-        font-size: 420%;
-        line-height: 110px;
-    }
-
     h2 {
         font-size: 130%;
     }
@@ -814,13 +818,15 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 88px;
-        height: 88px;
+        width: 80px;
+        height: 80px;
         padding-left: 15px;
     }
 
     #mw-title {
-        padding-right: 70px;
+        padding-right: 60px;
+        font-size: 305%;
+        line-height: 100px;
     }
 
     #navbar {
@@ -892,6 +898,11 @@ footer h4 {
         display: flex;
     }
 
+    #contact-hero {
+        width: 105%;
+        left: -2%;
+    }
+
     label {
         font-size: 90%;
     }
@@ -899,7 +910,8 @@ footer h4 {
     #mailing-list-card {
         top: 12%;
         left: 16%;
-        width: 30%;
+        width: 36%;
+        padding: 2.8%;
     }
 
     #mailing-list-card h2 {
@@ -957,11 +969,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px){
-    h1 {
-        font-size: 350%;
-        line-height: 85px;
-    }
-
     .card {
         padding: 6%;
     }
@@ -984,12 +991,16 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 72px;
-        height: 72px;
+        padding: 10px 0 10px 15px;
+        width: 70px;
+        height: 70px;
     }
 
     #mw-title {
         padding-right: 40px;
+        font-size: 275%;
+        line-height: 84px;
+        text-shadow: 5px 7px #111;
     }
 
     #welcome-hero, #welcome-edge, #contact-hero, #contact-edge {
@@ -1075,10 +1086,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 426px){
-    h1 {
-        font-size: 280%;
-    }
-
     h2 {
         font-size: 110%;
     }
@@ -1110,11 +1117,14 @@ footer h4 {
     #mw-logo {
         width: 60px;
         height: 60px;
-        padding-left: 15px;
+        padding: 8px;
     }
 
     #mw-title {
         padding-right: 5px;
+        font-size: 240%;
+        line-height: 72px;
+        text-shadow: 4px 6px #111;
     }
 
     #welcome-hero, #welcome-edge {
@@ -1129,6 +1139,10 @@ footer h4 {
 
     #profile-hero, #profile-edge {
         height: 90vw;
+    }
+
+    #profile-hero {
+        width: 106%;
     }
 
     #profile-card {
@@ -1194,20 +1208,23 @@ footer h4 {
     }
 
     #mailing-list-card {
-        left: 0;
-        top: 2%;
-        width: 65%;
+        left: 7%;
+        top: 3%;
+        margin: 0 auto;
+        padding: 5%;
+        width: 86%;
     }
-
+ 
     #contact-card {
-        padding: 7%;
-        right: 5%;
+        left: 7%;
         top: 56%;
-        width: 58%;
+        margin: 0 auto;
+        padding: 8%;
+        width: 86%;
     }
 
     footer {
-        height: 210px;
+        height: 200px;
     }
     
     .site-section {
@@ -1230,6 +1247,101 @@ footer h4 {
     }
 
     footer h4 {
-        padding-top: 20px;
+        padding-top: 12px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    #mw-logo {
+        padding: 6px;
+        width: 52px;
+        height: 52px;
+    }
+
+    #mw-title {
+        font-size: 210%;
+        padding-right: 0;
+        line-height: 60px;
+    }
+
+    #welcome-hero, #welcome-edge {
+        height: 120vw;
+    }
+
+    #welcome-card {
+        width: 50%;
+    }
+
+    #profile-card {
+        top: 3.5%;
+        left: 2%;
+    }
+
+    #studio-title-card {
+        font-size: 94%;
+        width: 55%;
+    }
+
+    #contact-hero, #contact-edge {
+        height: 165vw;
+    }
+
+    #mailing-list-card, #contact-card {
+        left: 4%;
+        width: 92%;
+    }
+
+    #contact-card {
+        top: 57%;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .site-section {
+        padding: 15px 12px 10px 12px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    #mw-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    #mw-title {
+        font-size: 190%;
+    }
+
+    #welcome-hero, #welcome-edge {
+        height: 140vw;
+    }
+
+    #welcome-card {
+        width: 60%;
+    }
+
+    #profile-hero, #profile-edge {
+        height: 100vw;
+    }
+
+    #profile-hero {
+        width: 110%;
+    }
+
+    #profile-card {
+        top: 2%;
+        left: 0%;
+        width: 42%;
+    }
+
+    #contact-hero, #contact-edge {
+        height: 185vw;
+    }
+
+    #mailing-list-card, #contact-card {
+        left: 0;
+        width: 100%;
     }
 }
