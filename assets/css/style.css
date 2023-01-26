@@ -730,6 +730,10 @@ footer h4 {
         font-size: 100%;
     }
 
+    #contact-hero, #contact-edge {
+        height: 60vw;
+    }
+
     #mailing-list-card h2 {
         font-size: 170%;
     }
@@ -898,11 +902,6 @@ footer h4 {
         display: flex;
     }
 
-    #contact-hero {
-        width: 105%;
-        left: -2%;
-    }
-
     label {
         font-size: 90%;
     }
@@ -1004,7 +1003,7 @@ footer h4 {
     }
 
     #welcome-hero, #welcome-edge, #contact-hero, #contact-edge {
-        height: 70vw;
+        height: 85vw;
     }
 
     #welcome-card {
@@ -1047,6 +1046,11 @@ footer h4 {
     
     #about-history li, #about-genre-audience li, #about-why-write li {
         font-size: 80%;
+    }
+
+    #contact-hero {
+        width: 130%;
+        left: -10%;
     }
 
     #mailing-list-card {
@@ -1203,6 +1207,11 @@ footer h4 {
         height: 152vw;
     }
 
+    #contact-hero {
+        width: 200%;
+        left: -38%;
+    }
+
     #mailing-list-card, #contact-card {
         margin: 4% 10%;
     }
@@ -1338,6 +1347,11 @@ footer h4 {
 
     #contact-hero, #contact-edge {
         height: 185vw;
+    }
+
+    #contact-hero {
+        width: 250%;
+        left: -55%;
     }
 
     #mailing-list-card, #contact-card {
