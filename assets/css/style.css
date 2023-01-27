@@ -84,7 +84,7 @@ ul {
 }
 
 
-/* Header */
+/* Header - Title and Logo */
 
 #header {
     display: block;
@@ -104,6 +104,8 @@ ul {
     line-height: 136px;
     padding-right: 122px;
 }
+
+/* Navbar */
 
 #navbar {
     clear: both;
@@ -136,8 +138,7 @@ ul {
     color: #fff;
 }
 
-
-/* Collapsible navbar classes */
+/* Collapsible Navbar Classes */
 
 .collapsible {
     display: none;
@@ -180,7 +181,7 @@ ul {
 }
 
 
-/* Page 1 */
+/* Page 1 - Welcome Hero Image and Welcome Card */
 
 #welcome-hero {
     width: 100%;
@@ -216,7 +217,7 @@ ul {
 }
 
 
-/* Page 2 - About the Author */
+/* Page 2 - Profile Hero Image and Profile Card */
 
 #profile-hero {
     width: 100%;
@@ -242,6 +243,8 @@ ul {
     width: 22%;
     height: fit-content;
 }
+
+/* Page 2 - About Panels */
 
 .about-panel div {
     display: inline-block;
@@ -290,7 +293,7 @@ ul {
 }
 
 
-/* Page 3 - My Books */
+/* Page 3 - Books Background Image and Intro Panel */
 
 #book-page {
     padding: 2.2% 0 2.2% 0;
@@ -298,7 +301,6 @@ ul {
     height: fit-content;
     background: url(../images/forest.jpg) top center / cover no-repeat fixed;
     position: relative;
-    /* filter: blur(2px); */
 }
 
 #books-intro-panel {
@@ -308,6 +310,8 @@ ul {
     background-color: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
+
+/* Page 3 - Bookshelves and Book Panels */
 
 .bookshelf {
     display: block;
@@ -355,7 +359,7 @@ ul {
 }
 
 
-/* Page 4 - Writing Studio */
+/* Page 4 - Studio Hero Image and Title Card */
 
 #studio-hero {
     padding: 2.4% 0;
@@ -375,6 +379,8 @@ ul {
 .studio-card {
     flex-direction: column;
 }
+
+/* Page 4 - Studio Panels */
 
 #getting-started {
     margin: 8% 0 0 40%;
@@ -401,13 +407,12 @@ ul {
 }
 
 
-/* Page 5 - Contact */
+/* Page 5 - Contact Hero Image */
 
 #contact-hero {
     width: 100%;
     height: 55vw;
-    /*background: url(../images/view.jpg) center center / cover no-repeat;*/
-    filter: blur(1px);
+    filter: blur(0.7px);
     overflow: hidden;
     position: absolute;
 }
@@ -418,6 +423,8 @@ ul {
     overflow: hidden;
     position: relative;
 }
+
+/* Page 5 - Mailing List Card and Sign Up Form */
 
 #mailing-list-card {
     left: 19.5%;
@@ -490,6 +497,8 @@ input[type=submit] {
     color: #111;
     background-color: #FE233F;
 }
+
+/* Page 5 - Contact Card */
 
 #contact-card {
     padding: 5%;
@@ -813,6 +822,7 @@ footer h4 {
         font-size: 90%;
     }
 
+    /* Switch page 2 panels from three columns to one */
     .panel {
         display: inline;
     }
@@ -1090,6 +1100,7 @@ footer h4 {
         line-height: 25px;
     }
 
+    /* Page 4 and 5 nav blocks stack */
     #site-section-stack {
         flex-direction: column;
     }
@@ -1206,6 +1217,7 @@ footer h4 {
         padding-bottom: 0.3rem;
     }
 
+    /* Book panels stack */
     .book {
         display: block;
         width: 84%;
@@ -1215,10 +1227,12 @@ footer h4 {
         margin: 2.5% 8%;
     }
 
+    /* Remove background image on page 4 */
     #studio-hero {
         background-image: none;
     }
 
+    /* Studio title card and studio panels stack */
     #studio-title-card {
         position: static;
         margin: 0 auto;
@@ -1253,6 +1267,7 @@ footer h4 {
         left: -38%;
     }
 
+    /* Mailing list card and contact card stack */
     #mailing-list-card, #contact-card {
         margin: 4% 10%;
     }
