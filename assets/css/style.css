@@ -136,7 +136,7 @@ ul {
 }
 
 
-/* Collapsable navbar classes */
+/* Collapsible navbar classes */
 
 .collapsible {
     display: none;
@@ -146,6 +146,9 @@ ul {
     text-align: center;
     text-transform: uppercase;
     padding: 10px 20px;
+    color: inherit;
+    text-decoration-color: inherit;
+    -webkit-text-decoration-color: inherit;
 }
 
 .collapsible:hover {
