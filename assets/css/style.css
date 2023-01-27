@@ -12,6 +12,7 @@
 body {
     font-family: Calibri, sans-serif;
     background-color: #2B2B2B;
+    -webkit-text-size-adjust: 100%;
 }
 
 h1 {
@@ -1201,6 +1202,10 @@ footer h4 {
 
     .book-panel-1, .book-panel-2, .book-panel-3 {
         margin: 2.5% 8%;
+    }
+
+    #studio-hero {
+        background-image: none;
     }
 
     #studio-title-card {
