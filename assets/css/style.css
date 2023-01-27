@@ -1040,11 +1040,11 @@ footer h4 {
         width: fit-content;
     }
 
-    #about-history h2, #about-genre-audience h2, #about-why-write h2 {
+    .about-panel h2 {
         padding: 4% 0 1.15rem 4%;
     }
     
-    #about-history li, #about-genre-audience li, #about-why-write li {
+    .about-panel li {
         font-size: 80%;
     }
 
@@ -1091,7 +1091,12 @@ footer h4 {
 
 @media screen and (max-width: 426px){
     h2 {
-        font-size: 110%;
+        font-size: 108%;
+    }
+
+    p {
+        font-size: 76%;
+        line-height: 22px;
     }
 
     .card h2 {
@@ -1132,7 +1137,11 @@ footer h4 {
     }
 
     #welcome-hero, #welcome-edge {
-        height: 100vw;
+        height: 105vw;
+    }
+
+    #welcome-hero {
+        filter: blur(1px);
     }
 
     #welcome-card {
@@ -1146,14 +1155,15 @@ footer h4 {
     }
 
     #profile-hero {
-        width: 106%;
+        width: 107%;
+        filter: blur(1px);
     }
 
     #profile-card {
         padding: 4%;
-        left: 3%;
-        top: 7%;
-        width: 35%;
+        left: 2.5%;
+        top: 5%;
+        width: 37.5%;
     }
 
     #profile-card h2 {
@@ -1173,7 +1183,7 @@ footer h4 {
     }
 
     .about-panel li {
-        font-size: 80%;
+        font-size: 70%;
         padding-left: 0.3rem;
     }
 
@@ -1198,9 +1208,21 @@ footer h4 {
         text-align: center;
     }
 
+    .studio-card h2 {
+        padding-bottom: 16px;
+    }
+
     #getting-started, #tips {
         width: 90%;
         margin: 4% 5%;
+    }
+
+    #getting-started p {
+        font-size: 78%;
+    }
+
+    #tips li {
+        font-size: 78%;
     }
 
     #contact-hero, #contact-edge {
@@ -1256,7 +1278,7 @@ footer h4 {
     }
 
     footer h4 {
-        padding-top: 12px;
+        padding-top: 18px;
     }
 }
 
