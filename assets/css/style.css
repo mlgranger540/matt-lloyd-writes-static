@@ -209,10 +209,10 @@ ul {
 }
 
 #welcome-card {
-    right: 17.5%;
+    right: 18%;
     top: 18%;
-    width: 25%;
-    height: 58%;
+    width: 22%;
+    height: fit-content;
 }
 
 
@@ -626,6 +626,10 @@ footer h4 {
         height: 50vw;
     }
 
+    #welcome-card {
+        width: 24%;
+    }
+
     #profile-hero, #profile-edge {
         height: 55vw;
     }
@@ -706,7 +710,7 @@ footer h4 {
     }
 
     #welcome-card {
-        width: 26%;
+        width: 25.5%;
     }
 
     #profile-card {
@@ -855,6 +859,12 @@ footer h4 {
 
     .collapsible {
         display: none;
+    }
+
+    #welcome-card {
+        top: 16%;
+        right: 17%;
+        width: 28%;
     }
 
     #profile-card {
@@ -1011,9 +1021,9 @@ footer h4 {
     }
 
     #welcome-card {
+        top: 19%;
         right: 10%;
         width: 36%;
-        height: 56%;
     }
 
     #profile-hero, #profile-edge {
@@ -1150,7 +1160,8 @@ footer h4 {
 
     #welcome-card {
         padding: 7%;
-        width: 45%;
+        width: 50%;
+        top: 16%;
         right: 10%;
     }
 
@@ -1308,7 +1319,8 @@ footer h4 {
     }
 
     #welcome-card {
-        width: 50%;
+        top: 18%;
+        width: 54%;
     }
 
     #profile-card {
@@ -1358,6 +1370,7 @@ footer h4 {
     }
 
     #welcome-card {
+        right: 8%;
         width: 60%;
     }
 
