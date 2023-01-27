@@ -1119,14 +1119,14 @@ footer h4 {
     }
 
     #mw-logo {
-        width: 60px;
-        height: 60px;
-        padding: 8px;
+        width: 58px;
+        height: 58px;
+        padding: 8px 6px;
     }
 
     #mw-title {
-        padding-right: 5px;
-        font-size: 240%;
+        padding-right: 6px;
+        font-size: 222%;
         line-height: 72px;
         text-shadow: 4px 6px #111;
     }
@@ -1204,7 +1204,7 @@ footer h4 {
     }
 
     #contact-hero, #contact-edge {
-        height: 152vw;
+        height: 162vw;
     }
 
     #contact-hero {
@@ -1226,7 +1226,7 @@ footer h4 {
  
     #contact-card {
         left: 7%;
-        top: 56%;
+        top: 57%;
         margin: 0 auto;
         padding: 8%;
         width: 86%;
