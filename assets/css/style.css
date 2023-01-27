@@ -399,11 +399,19 @@ ul {
     padding-left: 20px;
 }
 
+.nest-li {
+    list-style-type: none;
+}
+
 .studio-card li {
     padding-bottom: 0.65rem;
-    font-size: 115%;
+    font-size: 120%;
     color: #DDD;
     line-height: 28px;
+}
+
+.nest-li li {
+    font-size: 98%;
 }
 
 
@@ -648,6 +656,10 @@ footer h4 {
         width: 24%;
     }
 
+    .nest-li li {
+        font-size: 95%;
+    }
+
     #mailing-list-card input[type="checkbox"] {
         margin: 0.5rem;
     }
@@ -739,7 +751,7 @@ footer h4 {
         font-size: 105%;
     }
 
-    #tips li {
+    .studio-card li {
         font-size: 95%;
     }
 
@@ -828,7 +840,11 @@ footer h4 {
     }
 
     .panel li {
-        font-size: 80%;
+        font-size: 90%;
+    }
+
+    .nest-li li {
+        font-size: 92%;
     }
 
     .book h3 {
@@ -1069,7 +1085,11 @@ footer h4 {
     }
     
     .about-panel li {
-        font-size: 80%;
+        font-size: 85%;
+    }
+
+    .nest-li li {
+        font-size: 92%;
     }
 
     #contact-hero {
@@ -1254,8 +1274,12 @@ footer h4 {
         font-size: 78%;
     }
 
-    #tips li {
-        font-size: 78%;
+    .studio-card li {
+        font-size: 82%;
+    }
+
+    .nest-li li {
+        font-size: 94%;
     }
 
     #contact-hero, #contact-edge {
@@ -1346,6 +1370,10 @@ footer h4 {
     #studio-title-card {
         font-size: 94%;
         width: 55%;
+    }
+
+    .nest-li li {
+        font-size: 93.5%;
     }
 
     #contact-hero, #contact-edge {
