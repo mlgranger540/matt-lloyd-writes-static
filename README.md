@@ -90,7 +90,7 @@ On smaller resolutions, the contact section of the footer drops down below the w
 
 <img src="assets/docs/readme-images/mobile-footer.jpg" alt="Mobile footer" width="42%">
 
-### Features to Add
+### Improvements and Features to Add
 
 - Gallery of Images - This was a feature I wanted to add, but didn't have time for in the end. I would have included a gallery of related images, such as pictures of the author, books and writing-related images, and possibly supporting art for the books such as cover art and character designs.
 
@@ -99,6 +99,10 @@ On smaller resolutions, the contact section of the footer drops down below the w
 - Book Cover Images - I also would've liked to potentially have the books on page 3 display with book cover images, and maybe if clicked or swiped on, the info for that book would be revealed.
 
 - News/Blog Page - Another possible idea was to have a news or blog page for the author to give updates on things like their daily life, current works in progress, new books published or new editions coming out.
+
+- Multi-media - I could have added to my website more by adding multi-media elements such as videos or audio. This is an idea I only had towards the end of the build, so unfortunately I didn't have time to add it in.
+
+- Form Submission Page - At present when the mailing list form is submitted, it takes you to the Code Institute form dump page. This is useful to check that the form information is being submitted correctly, however it doesn't look very professional. In order to improve this, I would add my own personalised form submission page to inform users that their information has been submitted.
 
 ---
 
