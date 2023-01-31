@@ -26,7 +26,7 @@ View the live project [here](https://mlgranger540.github.io/milestone-1/).
 
 ![Matt Lloyd Writes title and logo](assets/docs/readme-images/title-and-logo.png)
 
-The header of my site includes a simple title and logo to immediately inform the user what website they are visiting. The logo was created myself using a digital art software and is meant to resemble flocks of birds flying across a sunset sky. The title uses a Google font called Ruthie, which I chose because the cursive font catches the eye and looks visually attractive, while also still being legible. Both of these elements, when clicked/tapped, function as links back to the homepage.
+The header of my site includes a simple title and logo to immediately inform the user what website they are visiting. The logo was created myself using a digital art software and is meant to resemble flocks of birds flying across a sunset sky, symbolising the feeling of freedom and happiness that comes from creating your own world through writing. The title uses a Google font called Ruthie, which I chose because the cursive font catches the eye and looks visually attractive, while also still being legible. Both of these elements, when clicked/tapped, function as links back to the homepage.
 
 ### Navbar
 
