@@ -178,7 +178,7 @@ CSS passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) 
 
 [WAVE](https://wave.webaim.org/) was used to assess the accessbility of the website.
 
-<img src="assets/docs/readme-images/wave.png" alt="Wave results" width="45%">
+<img src="assets/docs/readme-images/wave.png" alt="Wave results" width="42%">
 
 - No errors were detected, although it notes that I have two adjacent links to the same location, in the title and the home link in the navbar, and says these should be combined if possible to avoid excess navigation for screen reader and keyboard users. But as these were added in due to feedback from a tester, and couldn't really be combined, I had to leave them in.
 - Aria labels were used on the title and logo links and social media buttons in the footer and on the contact page, including the note that the latter open in a new tab, to help with navigation of the site for screen reader users.
@@ -224,5 +224,6 @@ The project can be cloned by using [this link](https://github.com/mlgranger540/m
 
 ### Acknowledgements
 
-- My family and friends for testing the deployed project and providing feedback as well as detailing any bugs found - special mention to Ben for going above and beyond!
+- My family and friends for testing the deployed project and providing feedback as well as detailing any bugs found
+- Special mention to Ben for going above and beyond!
 - My tutor Michael and mentor Antonio for their support and guidance
