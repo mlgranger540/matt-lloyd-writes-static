@@ -26,7 +26,7 @@ View the live project [here](https://mlgranger540.github.io/milestone-1/).
 
 ![Matt Lloyd Writes title and logo](assets/docs/readme-images/title-and-logo.png)
 
-The header of my site includes a simple title and logo to immediately inform the user what website they are visiting. The logo was created myself using a digital art software, and the title uses a Google font called Ruthie. Both of these, when clicked/tapped, function as links back to the homepage.
+The header of my site includes a simple title and logo to immediately inform the user what website they are visiting. The logo was created myself using a digital art software and is meant to resemble flocks of birds flying across a sunset sky. The title uses a Google font called Ruthie, which I chose because the cursive font catches the eye and looks visually attractive, while also still being legible. Both of these elements, when clicked/tapped, function as links back to the homepage.
 
 ### Navbar
 
@@ -113,6 +113,8 @@ The initial design of the project was mapped out with Wireframes using a program
 I then used these as a basis to build the structure of the final project with HTML and CSS.
 
 The colour scheme of the final site is a simple black and white with a highlight red colour to draw the eye. I also included black and white hero/background images, with a blur effect on some pages, to add to the design of the site while not detracting from the text.
+
+I chose the Google font Ruthie for the title as this quite closely resembled the cursive font used in the wireframes, which I liked the design of. The bulk of the content uses the simple sans-serif font Calibri, as this font is clear and easy to read, whilst giving a sense of professionalism to the content. I used uppercasing in some areas such as the navigation links and headings to make these stand out from the rest of the text content.
 
 ---
 
