@@ -8,13 +8,15 @@ View the live project [here](https://mlgranger540.github.io/milestone-1/).
 
 ---
 
-## Purpose
+## UX
 
-- Purpose for new visitors – to find out about the author and their writing, learn about their books and gauge their interest in reading them, get writing tips from the author, and join the author’s mailing list
+### Goals
 
-- Purpose for return visitors – to find out about any new books, return to writing tips
+- Goals for new visitors – to find out about the author and their writing, learn about their books and gauge their interest in reading them, get writing tips from the author, and join the author’s mailing list
 
-- Purpose for author – publicity, gain readership for their work, promote/sell their books, build connection with existing fans by sharing personal details and writing history, help inspire and develop the skills of future writers
+- Goals for return visitors – to find out about any new books, return to writing tips
+
+- Goals for author – publicity, gain readership for their work, promote/sell their books, build connection with existing fans by sharing personal details and writing history, help inspire and develop the skills of future writers
 
 ---
 
@@ -46,15 +48,37 @@ The logo also displays as a favicon in the browser tab, helping to indicate to a
 
 ![Welcome page](assets/docs/readme-images/welcome-hero.png)
 
-The homepage consists of a large black and white hero image of a book, with a transparent welcome card displayed over the top. The image straightaway allows the reader to get an idea of the kind of website they are visiting, and the card provides a brief but descriptive introduction to the author of the site and what content the rest of the site will contain.
+The homepage consists of a large black and white hero image of a book, with a transparent welcome card displayed over the top. The image straightaway allows the reader to get an idea of the kind of website they are visiting, and the card provides a brief but descriptive introduction to the author of the site and what content the rest of the site will contain. This image has a slight blur applied to it to ensure the image does not distract from the text.
 
 ### About the Author
 
+![Profile hero](assets/docs/readme-images/profile-hero.png)
+
+Page 2 begins with a hero image of the author and a profile card giving a short introduction. This image also has a blur effect applied for the same reason as above.
+
+Below this are three panels that give a summary of the author's writing history, the genres and audience they write for, and what motivates them to write. These are split into three colums on larger screen resolutions to allow the information to be more easily digested.
+
+![About panels](assets/docs/readme-images/about-panels.png)
+
 ### My Books
+
+![My books page](assets/docs/readme-images/books.png)
+
+The third page consists of a rundown of the author's books, organised onto three 'bookshelves', one for each genre. There are three books on each shelf, which each include the books' genres, rating, word and page count, themes, main characters, and a summary of the book. They are displayed in partially transparent white panels over a black and white background image of a forest, with enough contrast that the text is still easily read.
+
+On mobile these books are displayed in a stack rather than side by side.
 
 ### Writing Studio
 
+![Writing studio page](assets/docs/readme-images/writing-studio.png)
+
+The fourth page is a writing studio, containing tips from the author on how to get started as a writer and how to improve your writing. They are displayed over a background image of some of the author's own writing.
+
 ### Contact
+
+![Contact page](assets/docs/readme-images/contact.png)
+
+The last page contains a form to sign up to the author's mailing list, including first name, surname, email, and checkboxes to determine which books the user would like to receive email updates on. There is also a contact card with links to email and social media, which all open in a new tab when clicked. On mobile these stack rather than display side by side.
 
 ### Footer
 
@@ -130,15 +154,15 @@ The project was tested on various devices and screen resolutions, by using Chrom
 - All aspects of the site including images and fonts resize/reposition according to the screen size, allowing for a fully responsive experience
 - To improve responsiveness on mobile devices, I added a collapsible navbar for resolutions under 768px to avoid this taking up room on the page
 - I made text of the about panels into columns on bigger resolutions as this made it easier to digest the text
-- Removed background on page 4 on mobile as at these resolutions the image became stretched/blown up and was detracting from the appearance of the page
-- Also adjusted zoom/sizing of image on page 5 to avoid stretching/gaps on different resolutions
+- I removed the background on page 4 on mobile as at these resolutions the image became stretched/blown up and was detracting from the appearance of the page
+- I also adjusted the zoom/sizing of the image on page 5 to avoid stretching/gaps on different resolutions
 
 ### Compatibility
 
-I also tested the project on Chrome, Microsoft Edge and Safari to ensure that the website worked well on all browsers.
+I also tested the project on Chrome, Firefox, Microsoft Edge and Safari to ensure that the website worked well on all browsers.
 
-- There was an issue with menu button not inheriting colour on Safari, which has been fixed
-- There was also an issue with the sizing of the title on iOS devices, as the characters appeared more spaced out leading the title to display on two lines, where on Android phones it displays on one. I tried a couple of fixes but couldn't solve the issue. One solution would have been to reduce the font size further, but in order to reduce it enough to display properly on iPhones, it would have been way too small on Android. So as the issue doesn't severely impact the overall experience of using the site, I decided to leave it.
+- There was an issue with menu button not inheriting colour on Safari, which has been fixed by adding the text-decoration-color: inherit; and -webkit-text-decoration-color: inherit; properties to the CSS
+- There was also an issue with the sizing of the title on some mobile devices, specifically iOS devices (Chrome and Safari) and Firefox mobile users. The characters appear more spaced out, leading the title to display on two lines, where on other mobile devices/browsers it displays on one. I tried a couple of fixes using the -webkit-text-size-adjust property, but couldn't solve the issue. One solution would have been to reduce the font size further, but in order to reduce it enough to display properly on iPhones and Firefox, it would have been way too small on all other devices and browsers. So as the issue doesn't severely impact the overall experience of using the site, I decided to leave it.
 
 ### Validation
 
@@ -162,7 +186,7 @@ CSS passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) 
 
 ### Known Bugs
 
-- Title letter spacing issue on iOS still causes it to drop onto two lines on iPhones
+- Title letter spacing issue on some mobile devices/browsers still causes the title to drop onto two lines
 - Hover/active box was hanging below the navbar onto the image on pages 3-5 at certain resolutions – partially fixed by changing the background images to position: relative, now the overhang is covered by the image but still there and can be seen before the image loads
 - Load times of the images are still a little slow, but further compression would've resulted in loss of quality/reducing the resolution of the images and therefore led to a poor appearance of the site
 - Slight line appears above and below the genre and audience panel on the about page but seemingly only on Chrome Dev Tools at 4K resolution, as this couldn't be seen when viewing the deployed site on a 4K monitor
@@ -182,10 +206,14 @@ The project can be cloned through GitHub using [this link](https://github.com/ml
 ### Code
 
 - The Love Running project inspired the zoom animation on the hero images on page 1 and 2
+- I used the code structure [here](https://jsfiddle.net/03p6wsjb/14) to get the contact section of the footer to drop below the writing studio section on smaller resolutions
+- I learned about the box-sizing: border-box property from these [[1](https://stackoverflow.com/questions/16907518/css-input-with-width-100-goes-outside-parents-bound), [2](https://stackoverflow.com/questions/36137640/css-input-element-width-going-outside-container)] stackoverflow posts, when padding was causing some of my elements to exceed 100% width
+- [This](https://stackoverflow.com/questions/51181010/text-decoration-line-through-css-does-not-work-on-safari-with-my-completed-cla) stackoverflow post helped solve the issue of colour not inheriting on Safari
+- I attempted the fixes [here](https://stackoverflow.com/questions/3226001/some-font-sizes-rendered-larger-on-safari-iphone/3428477#3428477) when trying to solve the issue of the title letter spacing appearing bigger on certain mobile devices/browsers, but they didn't solve my issue
 
 ### Content
 
-- All content was written by me
+- All text content was written by me
 
 ### Media
 
@@ -196,6 +224,8 @@ The project can be cloned through GitHub using [this link](https://github.com/ml
 
 ### Acknowledgements
 
-- Ben <3 (for keeping me sane, keeping me going, helping me troubleshoot errors, testing throughout development and after deployment [esp. on iPhone], as well as coming up with the collapsible navbar, helping me sort out the media queries, various other little bits of code help and helpful links - and basically just generally being awesome)
+- My family and friends for testing the deployed project and providing feedback as well as detailing any bugs found
 
-- My tutor and mentor for support and answering questions
+- Special mention to Ben - for keeping me sane, keeping me going, helping me troubleshoot errors, testing throughout development and deployment (especially on iPhone), and basically just generally being awesome
+
+- My tutor Michael and mentor Antonio for their support and guidance
