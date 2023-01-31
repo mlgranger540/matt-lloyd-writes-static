@@ -36,11 +36,11 @@ Beneath the title and logo is the navigation bar, which has links to all the pag
 
 On smaller resolution devices, the navbar is collapsed down into a drop-down menu bar that toggles on and off on click, in order to minimise the space taken up on the screen and improve user experience for mobile users.
 
-<img src="assets/docs/readme-images/collapsed-nav.jpg" alt="Collapsed navbar" width="45%">
+<img src="assets/docs/readme-images/collapsed-nav.jpg" alt="Collapsed navbar" width="42%">
 
 ### Favicon
 
-<img src="assets/docs/readme-images/favicon.png" alt="Matt Lloyd Writes favicon" width="40%">
+<img src="assets/docs/readme-images/favicon.png" alt="Matt Lloyd Writes favicon" width="30%">
 
 The logo also displays as a favicon in the browser tab, helping to indicate to a user which tab is which when multiple tabs are open.
 
@@ -78,7 +78,7 @@ The fourth page is a writing studio, containing tips from the author on how to g
 
 ![Contact page](assets/docs/readme-images/contact.png)
 
-The last page contains a form to sign up to the author's mailing list, including first name, surname, email, and checkboxes to determine which books the user would like to receive email updates on. There is also a contact card with links to email and social media, which all open in a new tab when clicked. On mobile these stack rather than display side by side.
+The last page contains a form to sign up to the author's mailing list, including first name, surname, email, and checkboxes to determine which books the user would like to receive email updates on. There is also a contact card with links to email and social media, which all open in a new tab when clicked. On mobile the two cards stack rather than display side by side.
 
 ### Footer
 
@@ -88,9 +88,7 @@ The footer of the site contains a navigation tree to all the sub-sections of the
 
 On smaller resolutions, the contact section of the footer drops down below the writing studio links, to make the display more compact for smaller devices.
 
-<img src="assets/docs/readme-images/mobile-footer.jpg" alt="Mobile footer" width="45%">
-
-<br>
+<img src="assets/docs/readme-images/mobile-footer.jpg" alt="Mobile footer" width="42%">
 
 ### Features to Add
 
@@ -112,7 +110,9 @@ The initial design of the project was mapped out with Wireframes using a program
 <img src="assets/docs/wireframes/mw-p2-wireframe.png" alt="Page 2 wireframe" width="50%"><img src="assets/docs/wireframes/mw-p3-wireframe.png" alt="Page 3 wireframe" width="50%">
 <img src="assets/docs/wireframes/mw-p4-wireframe.png" alt="Page 4 wireframe" width="50%">
 
-I then used these as a basis to build the structure of the final project with HTML and CSS. The colour scheme of the final site is a simple black and white with a highlight red colour to draw the eye. I also included black and white hero/background images, with a blur effect on some pages, to add to the design of the site while not detracting from the text.
+I then used these as a basis to build the structure of the final project with HTML and CSS.
+
+The colour scheme of the final site is a simple black and white with a highlight red colour to draw the eye. I also included black and white hero/background images, with a blur effect on some pages, to add to the design of the site while not detracting from the text.
 
 ---
 
@@ -140,7 +140,7 @@ I then used these as a basis to build the structure of the final project with HT
 ### User Experience
 
 - All links have been thoroughly tested to ensure they work and go to the correct locations
-- The title of page tabs correctly indicate which page user is on
+- The title of page tabs correctly indicate which page the user is on
 - Hover feature on the navbar changes the background colour and font colour of the element, as well as adding an underline to links in the navbar and footer, making it clear which links are clickable
 - Active tab is correctly highlighted so user knows where they are on the site
 - Load times of images were initially quite slow, so I used image optimising tools to compress the images, improving the load times and therefore the user experience
@@ -149,20 +149,20 @@ I then used these as a basis to build the structure of the final project with HT
 
 ### Responsiveness
 
-The project was tested on various devices and screen resolutions, by using Chrome Dev Tools during development as well as testing the deployed site on a variety of desktop and mobile devices from around 320px to 4k resolution.
+The project was tested on various devices and screen resolutions, by using Chrome Dev Tools during development as well as testing the deployed site on a variety of desktop and mobile devices from around 320px to 4K resolution.
 
 - All aspects of the site including images and fonts resize/reposition according to the screen size, allowing for a fully responsive experience
 - To improve responsiveness on mobile devices, I added a collapsible navbar for resolutions under 768px to avoid this taking up room on the page
-- I made text of the about panels into columns on bigger resolutions as this made it easier to digest the text
+- I made the text of the about panels into columns on bigger resolutions as this made it easier to digest the text
 - I removed the background on page 4 on mobile as at these resolutions the image became stretched/blown up and was detracting from the appearance of the page
 - I also adjusted the zoom/sizing of the image on page 5 to avoid stretching/gaps on different resolutions
 
 ### Compatibility
 
-I also tested the project on Chrome, Firefox, Microsoft Edge and Safari to ensure that the website worked well on all browsers.
+I also tested the project on Google Chrome, Firefox, Microsoft Edge and Safari to ensure that the website worked well on all browsers.
 
 - There was an issue with menu button not inheriting colour on Safari, which has been fixed by adding the text-decoration-color: inherit; and -webkit-text-decoration-color: inherit; properties to the CSS
-- There was also an issue with the sizing of the title on some mobile devices, specifically iOS devices (Chrome and Safari) and Firefox mobile users. The characters appear more spaced out, leading the title to display on two lines, where on other mobile devices/browsers it displays on one. I tried a couple of fixes using the -webkit-text-size-adjust property, but couldn't solve the issue. One solution would have been to reduce the font size further, but in order to reduce it enough to display properly on iPhones and Firefox, it would have been way too small on all other devices and browsers. So as the issue doesn't severely impact the overall experience of using the site, I decided to leave it.
+- There was also an issue with the sizing of the title on some mobile devices, specifically iOS devices (Chrome and Safari) and Firefox mobile users. The characters appear more spaced out, leading the title to display on two lines, where on other mobile devices/browsers it displays on one. I tried a couple of fixes using the -webkit-text-size-adjust property, but couldn't solve the issue. One solution would have been to reduce the font size further, but in order to reduce it enough to display properly on iPhones and Firefox mobile, it would have been way too small on other mobile devices and browsers. So as the issue doesn't severely impact the overall experience of using the site, I decided to leave it.
 
 ### Validation
 
@@ -176,7 +176,7 @@ CSS passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) 
 
 ### Accessibility
 
-[Wave](https://wave.webaim.org/) was used to assess the accessbility of the website
+[WAVE](https://wave.webaim.org/) was used to assess the accessbility of the website.
 
 <img src="assets/docs/readme-images/wave.png" alt="Wave results" width="50%">
 
@@ -187,7 +187,7 @@ CSS passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) 
 ### Known Bugs
 
 - Title letter spacing issue on some mobile devices/browsers still causes the title to drop onto two lines
-- Hover/active box was hanging below the navbar onto the image on pages 3-5 at certain resolutions – partially fixed by changing the background images to position: relative, now the overhang is covered by the image but still there and can be seen before the image loads
+- Hover/active box was hanging below the navbar onto the image on pages 3-5 at certain resolutions - partially fixed by changing the background images to position: relative, now the overhang is covered by the image but still there and can be seen before the image loads
 - Load times of the images are still a little slow, but further compression would've resulted in loss of quality/reducing the resolution of the images and therefore led to a poor appearance of the site
 - Slight line appears above and below the genre and audience panel on the about page but seemingly only on Chrome Dev Tools at 4K resolution, as this couldn't be seen when viewing the deployed site on a 4K monitor
 
@@ -195,9 +195,9 @@ CSS passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) 
 
 ## Deployment
 
-The project was deployed to GitHub Pages.
+The project was deployed to GitHub Pages by going to the settings of the repository on GitHub, going to the pages section, and deploying from branch main.
 
-The project can be cloned through GitHub using [this link](https://github.com/mlgranger540/milestone-1.git).
+The project can be cloned by using [this link](https://github.com/mlgranger540/milestone-1.git) with the `git clone` command.
 
 ---
 
@@ -224,8 +224,5 @@ The project can be cloned through GitHub using [this link](https://github.com/ml
 
 ### Acknowledgements
 
-- My family and friends for testing the deployed project and providing feedback as well as detailing any bugs found
-
-- Special mention to Ben - for keeping me sane, keeping me going, helping me troubleshoot errors, testing throughout development and deployment (especially on iPhone), and basically just generally being awesome
-
+- My family and friends for testing the deployed project and providing feedback as well as detailing any bugs found - special mention to Ben for going above and beyond!
 - My tutor Michael and mentor Antonio for their support and guidance
