@@ -200,6 +200,7 @@ ul {
     position: relative;
 }
 
+/* Zoom animation inspired by Code Institute Love Running project */
 @keyframes zoom {
     from {
         transform: scale(1);
@@ -534,6 +535,7 @@ footer {
     text-transform: uppercase;
 }
 
+/* Code structure for section 4 of footer to drop below section 3 on smaller resolutions -> https://jsfiddle.net/03p6wsjb/14 */
 #footer-nav {
     display: flex;
     justify-content: center;
