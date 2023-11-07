@@ -2,7 +2,7 @@
 
 This project is a portfolio website for an author to provide information about themselves and their books, aimed at both current fans and potential future readers. It is designed to work responsively across a range of devices and screen resolutions.
 
-View the live project [here](https://mlgranger540.github.io/milestone-1/).
+View the live project [here](https://mlgranger540.github.io/matt-lloyd-writes/).
 
 ![Matt Lloyd Writes responsive images](assets/docs/readme-images/mw-responsive.png)
 
